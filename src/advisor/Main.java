@@ -1,29 +1,35 @@
 package advisor;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
     private static String clientId = "b07d74663394474199b86e460e9d01de";
-    private static String redirectURI = "http://localhost:8080";
+    private static String redirectURI = "http://localhost:8081";
     private static String authorizationLink = String.format("https://accounts.spotify.com/authorize?client_id=%s&redirect_uri=%s&response_type=code", clientId, redirectURI);
 
-    public static void main(String[] args) {
+    static HTTP http = new HTTP();
+
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         if (isAuthorized()) {
             openMenu();
         }
     }
 
-    private static boolean isAuthorized() {
+    private static boolean isAuthorized() throws IOException, InterruptedException {
         String input;
         boolean isAuthorized = false;
         while (!isAuthorized) {
             input = scanner.nextLine();
             switch (input) {
                 case "auth":
+                    http.startServer();
+                    System.out.println("use this link to request the access code:");
                     System.out.println(authorizationLink);
+//                    http.getAuthCode(redirectURI);
                     System.out.println("---SUCCESS---");
                     isAuthorized = true;
                     break;
