@@ -6,9 +6,6 @@ import java.util.Scanner;
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
-    private static String clientId = "b07d74663394474199b86e460e9d01de";
-    private static String redirectURI = "http://localhost:8081";
-    private static String authorizationLink = String.format("https://accounts.spotify.com/authorize?client_id=%s&redirect_uri=%s&response_type=code", clientId, redirectURI);
 
     static HTTP http = new HTTP();
 
@@ -27,10 +24,10 @@ public class Main {
             switch (input) {
                 case "auth":
                     http.startServer();
-                    System.out.println("use this link to request the access code:");
-                    System.out.println(authorizationLink);
-//                    http.getAuthCode(redirectURI);
-                    System.out.println("---SUCCESS---");
+                    http.showLink();
+                    http.waitForAuthCode();
+                    http.getToken();
+                    http.shutdownServer();System.out.println("---SUCCESS---");
                     isAuthorized = true;
                     break;
                 default:
