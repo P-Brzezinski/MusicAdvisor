@@ -21,7 +21,7 @@ public class HTTP {
     private String authorizationLink = String.format("https://accounts.spotify.com/authorize?client_id=%s&redirect_uri=%s&response_type=code", clientId, redirectURI);
     private String authCode;
 
-    private String spotifyAccountService = "https://accounts.spotify.com/api/token";
+    public static String ACCOUNT_SERVICE = "https://accounts.spotify.com";
 
     public void startServer() throws IOException {
         server = HttpServer.create();
@@ -45,25 +45,17 @@ public class HTTP {
     }
 
     private void handleRequestForAuthCode(HttpExchange exchange) throws IOException {
-        URI requestURI = exchange.getRequestURI();
+        String query = exchange.getRequestURI().getQuery();
         String response;
-        String code;
-        String query = null;
-        if (requestURI.toString().equals("/?error=access_denied")) {
-            response = "Authorization code not found. Try again.";
-        } else {
+        if (query != null && query.contains("code")) {
+            authCode = query.substring(5);
             response = "Got the code. Return back to your program.";
-            query = exchange.getRequestURI().getQuery();
+        } else {
+            response = "Authorization code not found. Try again.";
         }
-
-        exchange.sendResponseHeaders(200, response.getBytes().length);
-        OutputStream os = exchange.getResponseBody();
-        os.write(response.getBytes());
-        os.close();
-
-        String[] splitQuery = query.split("=");
-        code = splitQuery[1];
-        this.authCode = code;
+        exchange.sendResponseHeaders(200, response.length());
+        exchange.getResponseBody().write(response.getBytes());
+        exchange.getResponseBody().close();
     }
 
     public void waitForAuthCode() {
@@ -83,7 +75,7 @@ public class HTTP {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .header("Content-Type", "application/x-www-form-urlencoded")
-                .uri(URI.create(spotifyAccountService))
+                .uri(URI.create(ACCOUNT_SERVICE + "/api/token"))
                 .POST(HttpRequest.BodyPublishers.ofString(
                         "&grant_type=authorization_code" +
                                 "&code=" + authCode +

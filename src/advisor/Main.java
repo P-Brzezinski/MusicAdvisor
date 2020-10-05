@@ -11,12 +11,16 @@ public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
+        if (args.length > 1 && args[0].equals("-access")) {
+            HTTP.ACCOUNT_SERVICE = args[1];
+        }
+
         if (isAuthorized()) {
             openMenu();
         }
     }
 
-    private static boolean isAuthorized() throws IOException, InterruptedException {
+    private static boolean isAuthorized() throws IOException {
         String input;
         boolean isAuthorized = false;
         while (!isAuthorized) {
@@ -27,11 +31,12 @@ public class Main {
                     http.showLink();
                     http.waitForAuthCode();
                     http.getToken();
-                    http.shutdownServer();System.out.println("---SUCCESS---");
+                    http.shutdownServer();
+                    System.out.println("---SUCCESS---");
                     isAuthorized = true;
                     break;
                 default:
-                    System.out.println("Please provide access for application.");
+                    System.out.println("Please, provide access for application.");
             }
         }
         return isAuthorized;
