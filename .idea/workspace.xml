@@ -4,14 +4,19 @@
     <list default="true" id="0ec3cd2a-741b-4731-9746-eda1ba2aa724" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MusicAdvisor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MusicAdvisor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/HTTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/HTTP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advisor/HTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/HTTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advisor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +73,23 @@
     <property name="project.structure.proportion" value="0.11820328" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="HTTP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="advisor.HTTP" />
       <module name="MusicAdvisor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advisor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="advisor.Main" />
+      <module name="MusicAdvisor.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="advisor.*" />
@@ -161,6 +179,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.HTTP" />
@@ -194,7 +213,7 @@
       <workItem from="1601299418315" duration="3455000" />
       <workItem from="1601663171092" duration="24065000" />
       <workItem from="1603052277729" duration="1681000" />
-      <workItem from="1603215418285" duration="131000" />
+      <workItem from="1603215418285" duration="3664000" />
     </task>
     <servers />
   </component>
@@ -227,33 +246,41 @@
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1601901434437" />
     <state x="499" y="410" width="735" height="513" key="FileChooserDialogImpl/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053473000" />
-    <state width="1253" height="169" key="GridCell.Tab.0.bottom" timestamp="1603054053152">
-      <screen x="67" y="283" width="1299" height="741" />
+    <state width="1234" height="259" key="GridCell.Tab.0.bottom" timestamp="1603219259423">
+      <screen x="0" y="283" width="1280" height="741" />
     </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.bottom/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278466" />
+    <state width="1234" height="259" key="GridCell.Tab.0.bottom/1280.0.1366.768/0.283.1280.741@0.283.1280.741" timestamp="1603219259423" />
     <state width="1253" height="165" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1601907324635" />
     <state width="1253" height="67" key="GridCell.Tab.0.bottom/67.27.3347.741@67.27.3347.741" timestamp="1601918340566" />
     <state width="1253" height="169" key="GridCell.Tab.0.bottom/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.bottom/67.283.2579.741@67.283.2579.741" timestamp="1601925463772" />
-    <state width="1253" height="169" key="GridCell.Tab.0.center" timestamp="1603054053152">
-      <screen x="67" y="283" width="1299" height="741" />
+    <state width="1234" height="259" key="GridCell.Tab.0.center" timestamp="1603219259423">
+      <screen x="0" y="283" width="1280" height="741" />
     </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.center/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278466" />
+    <state width="1234" height="259" key="GridCell.Tab.0.center/1280.0.1366.768/0.283.1280.741@0.283.1280.741" timestamp="1603219259423" />
     <state width="1253" height="165" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1601907324634" />
     <state width="1253" height="67" key="GridCell.Tab.0.center/67.27.3347.741@67.27.3347.741" timestamp="1601918340565" />
     <state width="1253" height="169" key="GridCell.Tab.0.center/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.center/67.283.2579.741@67.283.2579.741" timestamp="1601925463771" />
-    <state width="1253" height="169" key="GridCell.Tab.0.left" timestamp="1603054053152">
-      <screen x="67" y="283" width="1299" height="741" />
+    <state width="1234" height="259" key="GridCell.Tab.0.left" timestamp="1603219259422">
+      <screen x="0" y="283" width="1280" height="741" />
     </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.left/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278465" />
+    <state width="1234" height="259" key="GridCell.Tab.0.left/1280.0.1366.768/0.283.1280.741@0.283.1280.741" timestamp="1603219259422" />
     <state width="1253" height="165" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1601907324634" />
     <state width="1253" height="67" key="GridCell.Tab.0.left/67.27.3347.741@67.27.3347.741" timestamp="1601918340564" />
     <state width="1253" height="169" key="GridCell.Tab.0.left/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.left/67.283.2579.741@67.283.2579.741" timestamp="1601925463771" />
-    <state width="1253" height="169" key="GridCell.Tab.0.right" timestamp="1603054053152">
-      <screen x="67" y="283" width="1299" height="741" />
+    <state width="1234" height="259" key="GridCell.Tab.0.right" timestamp="1603219259423">
+      <screen x="0" y="283" width="1280" height="741" />
     </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.right/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278466" />
+    <state width="1234" height="259" key="GridCell.Tab.0.right/1280.0.1366.768/0.283.1280.741@0.283.1280.741" timestamp="1603219259423" />
     <state width="1253" height="165" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1601907324635" />
     <state width="1253" height="67" key="GridCell.Tab.0.right/67.27.3347.741@67.27.3347.741" timestamp="1601918340565" />

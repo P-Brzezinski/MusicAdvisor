@@ -27,13 +27,12 @@ public class Main {
             input = scanner.nextLine();
             switch (input) {
                 case "auth":
-                    http.startServer();
-                    http.showLink();
-                    http.waitForAuthCode();
-                    http.getToken();
-                    http.shutdownServer();
-                    System.out.println("---SUCCESS---");
-                    isAuthorized = true;
+                    isAuthorized = http.handleAuthRequest();
+                    if (isAuthorized){
+                        System.out.println("Success!");
+                    }else {
+                        System.out.println("Failed!");
+                    }
                     break;
                 default:
                     System.out.println("Please, provide access for application.");
