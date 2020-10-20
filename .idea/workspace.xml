@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec3cd2a-741b-4731-9746-eda1ba2aa724" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/ApiHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/ApiHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/AuthorizationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/AuthorizationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/MainMenuHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/MainMenuHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/ApiHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/ApiHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/AuthorizationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/AuthorizationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/MainMenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/MainMenuHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +64,7 @@
     <property name="project.structure.proportion" value="0.11820328" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.HTTP">
     <configuration name="HTTP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="advisor.HTTP" />
       <module name="MusicAdvisor" />
@@ -186,7 +170,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.HTTP" />
