@@ -5,10 +5,13 @@ import java.util.Scanner;
 
 public class MainMenuHandler {
 
-    private static Scanner scanner = new Scanner(System.in);
-    private static AuthorizationHandler authorizationHandler = new AuthorizationHandler();
+    private Scanner scanner = new Scanner(System.in);
+    private AuthorizationHandler authorizationHandler = new AuthorizationHandler();
+    public ApiHandler api = new ApiHandler();
 
-    public static boolean isAuthorized() throws IOException {
+    //TODO move this method to AuthorizationHandler?
+    public boolean isAuthorized() throws IOException {
+        HTTPServer.start();
         String input;
         boolean isAuthorized = false;
         while (!isAuthorized) {
@@ -18,6 +21,7 @@ public class MainMenuHandler {
                     isAuthorized = authorizationHandler.handleAuthRequest();
                     if (isAuthorized){
                         System.out.println("Success!");
+                        HTTPServer.stop();
                     }else {
                         System.out.println("Failed!");
                     }
@@ -29,17 +33,13 @@ public class MainMenuHandler {
         return isAuthorized;
     }
 
-    public static void openMenu() {
+    public void openMenu() {
         String input;
         do {
             input = scanner.nextLine();
             switch (input) {
                 case "new":
-                    System.out.println("---NEW RELEASES---");
-                    System.out.println("Mountains [Sia, Diplo, Labrinth]");
-                    System.out.println("Runaway [Lil Peep]");
-                    System.out.println("The Greatest Show [Panic! At The Disco]");
-                    System.out.println("All Out Life [Slipknot]");
+                    api.showNewReleases();
                     break;
                 case "featured":
                     System.out.println("---FEATURED---");
