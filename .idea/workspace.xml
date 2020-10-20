@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec3cd2a-741b-4731-9746-eda1ba2aa724" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MusicAdvisor/META-INF/MusicAdvisor.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MusicAdvisor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MusicAdvisor.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -16,7 +29,12 @@
         <task path="$PROJECT_DIR$/build.gradle">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -50,7 +68,7 @@
     <property name="project.structure.proportion" value="0.11820328" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Gradle./home/pawel/Projects/MojeProjekty/Advisor/MusicAdvisor/build.gradle (2)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HTTP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="advisor.HTTP" />
       <module name="MusicAdvisor" />
@@ -175,7 +193,8 @@
       <workItem from="1601226976488" duration="3833000" />
       <workItem from="1601299418315" duration="3455000" />
       <workItem from="1601663171092" duration="24065000" />
-      <workItem from="1603052277729" duration="1200000" />
+      <workItem from="1603052277729" duration="1681000" />
+      <workItem from="1603215418285" duration="131000" />
     </task>
     <servers />
   </component>
@@ -208,37 +227,37 @@
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1601901434437" />
     <state x="499" y="410" width="735" height="513" key="FileChooserDialogImpl/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053473000" />
-    <state width="1253" height="169" key="GridCell.Tab.0.bottom" timestamp="1603053497371">
+    <state width="1253" height="169" key="GridCell.Tab.0.bottom" timestamp="1603054053152">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1253" height="165" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1601907324635" />
     <state width="1253" height="67" key="GridCell.Tab.0.bottom/67.27.3347.741@67.27.3347.741" timestamp="1601918340566" />
-    <state width="1253" height="169" key="GridCell.Tab.0.bottom/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053497371" />
+    <state width="1253" height="169" key="GridCell.Tab.0.bottom/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.bottom/67.283.2579.741@67.283.2579.741" timestamp="1601925463772" />
-    <state width="1253" height="169" key="GridCell.Tab.0.center" timestamp="1603053497371">
+    <state width="1253" height="169" key="GridCell.Tab.0.center" timestamp="1603054053152">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1253" height="165" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1601907324634" />
     <state width="1253" height="67" key="GridCell.Tab.0.center/67.27.3347.741@67.27.3347.741" timestamp="1601918340565" />
-    <state width="1253" height="169" key="GridCell.Tab.0.center/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053497371" />
+    <state width="1253" height="169" key="GridCell.Tab.0.center/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.center/67.283.2579.741@67.283.2579.741" timestamp="1601925463771" />
-    <state width="1253" height="169" key="GridCell.Tab.0.left" timestamp="1603053497371">
+    <state width="1253" height="169" key="GridCell.Tab.0.left" timestamp="1603054053152">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1253" height="165" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1601907324634" />
     <state width="1253" height="67" key="GridCell.Tab.0.left/67.27.3347.741@67.27.3347.741" timestamp="1601918340564" />
-    <state width="1253" height="169" key="GridCell.Tab.0.left/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053497371" />
+    <state width="1253" height="169" key="GridCell.Tab.0.left/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.left/67.283.2579.741@67.283.2579.741" timestamp="1601925463771" />
-    <state width="1253" height="169" key="GridCell.Tab.0.right" timestamp="1603053497371">
+    <state width="1253" height="169" key="GridCell.Tab.0.right" timestamp="1603054053152">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1253" height="165" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1601907324635" />
     <state width="1253" height="67" key="GridCell.Tab.0.right/67.27.3347.741@67.27.3347.741" timestamp="1601918340565" />
-    <state width="1253" height="169" key="GridCell.Tab.0.right/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053497371" />
+    <state width="1253" height="169" key="GridCell.Tab.0.right/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603054053152" />
     <state width="1253" height="169" key="GridCell.Tab.0.right/67.283.2579.741@67.283.2579.741" timestamp="1601925463772" />
     <state x="449" y="407" width="524" height="491" key="extract.method.dialog" timestamp="1601233621785">
       <screen x="67" y="283" width="1299" height="741" />
