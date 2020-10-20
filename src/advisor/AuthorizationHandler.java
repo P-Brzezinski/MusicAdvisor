@@ -11,11 +11,11 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class HTTP {
+public class AuthorizationHandler {
 
     private HttpServer server;
 
-    private static String ACCESS_TOKEN = null;
+    public static String ACCESS_TOKEN = null;
     public static String ACCOUNT_SERVICE = "https://accounts.spotify.com";
 
     private String clientId = "b07d74663394474199b86e460e9d01de";
