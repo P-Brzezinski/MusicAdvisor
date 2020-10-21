@@ -1,5 +1,6 @@
 package advisor;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -8,32 +9,29 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.List;
 
 public class ApiHandler {
 
-    public void showNewReleases() {
-        getNewReleases();
-
-    }
-
-    //TODO finish iteration thorugh new releases
-    public List<String> getNewReleases(){
+    public void showNewReleases(){
         String json = createRequest();
         JsonObject jo = JsonParser.parseString(json).getAsJsonObject();
 
-        System.out.println(jo);
-        System.out.println();
-        System.out.println(jo.getAsJsonObject("albums").toString());
-        System.out.println();
-        System.out.println(jo.getAsJsonObject("albums").getAsJsonArray("items").get(0));
-        System.out.println();
-        System.out.println(jo.getAsJsonObject("albums").getAsJsonArray("items").get(0).getAsJsonObject().getAsJsonArray("artists").get(0).getAsJsonObject().get("name"));
+        JsonArray asJsonArray = jo.getAsJsonObject("albums").getAsJsonArray("items");
 
-        return null;
+        for (int i = 0; i < asJsonArray.size(); i++) {
+            System.out.println();
+            NewReleaseRecord record = new NewReleaseRecord();
+            String title = asJsonArray.get(i).getAsJsonObject().get("name").getAsString();
+            String name = asJsonArray.get(i).getAsJsonObject().getAsJsonArray("artists").get(0).getAsJsonObject().get("name").getAsString();
+            String link = asJsonArray.get(i).getAsJsonObject().getAsJsonObject("external_urls").get("spotify").getAsString();
+            record.setTitle(title);
+            record.setArtist(name);
+            record.setUri(URI.create(link));
+            System.out.println(record.toString());
+        }
     }
 
-    public String createRequest(){
+    private String createRequest(){
         String apiPath = "https://api.spotify.com/v1/browse/new-releases";
         HttpRequest request = HttpRequest.newBuilder()
                 .header("Authorization", "Bearer " + AuthorizationHandler.ACCESS_TOKEN)

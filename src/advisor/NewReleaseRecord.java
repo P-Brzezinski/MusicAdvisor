@@ -5,16 +5,16 @@ import java.net.URI;
 public class NewReleaseRecord {
 
     private String title;
-    private String author;
+    private String artist;
     private URI uri;
 
 
     public NewReleaseRecord() {
     }
 
-    public NewReleaseRecord(String title, String author, URI uri) {
+    public NewReleaseRecord(String title, String artist, URI uri) {
         this.title = title;
-        this.author = author;
+        this.artist = artist;
         this.uri = uri;
     }
 
@@ -26,12 +26,12 @@ public class NewReleaseRecord {
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getArtist() {
+        return artist;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setArtist(String artist) {
+        this.artist = artist;
     }
 
     public URI getUri() {
@@ -40,5 +40,12 @@ public class NewReleaseRecord {
 
     public void setUri(URI uri) {
         this.uri = uri;
+    }
+
+    @Override
+    public String toString() {
+        return title + "\n"
+                + "[" + artist + "]\n"
+                + uri;
     }
 }

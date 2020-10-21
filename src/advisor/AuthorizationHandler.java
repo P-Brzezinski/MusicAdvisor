@@ -16,7 +16,7 @@ public class AuthorizationHandler {
     public static String ACCOUNT_SERVICE = "https://accounts.spotify.com";
 
     private String clientId = "b07d74663394474199b86e460e9d01de";
-    private String clientSecret = "0cbec257986649f6a631ec0bb1225fe7";
+    private String clientSecret = "a5fcd0999a9148fd9733ef2d9bbb7482";
     private String redirectURI = "http://localhost:8081";
 
     private String authorizationLink = String.format("https://accounts.spotify.com/authorize?client_id=%s&redirect_uri=%s&response_type=code", clientId, redirectURI);
