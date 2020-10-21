@@ -1,4 +1,4 @@
-package advisor;
+package advisor.model;
 
 import java.net.URI;
 

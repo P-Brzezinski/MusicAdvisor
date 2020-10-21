@@ -1,4 +1,9 @@
-package advisor;
+package advisor.menu;
+
+import advisor.api.RequestsHandler;
+import advisor.api.requests.NewReleaseRequest;
+import advisor.api.AuthorizationHandler;
+import advisor.http.HTTPServer;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -7,9 +12,8 @@ public class MainMenuHandler {
 
     private Scanner scanner = new Scanner(System.in);
     private AuthorizationHandler authorizationHandler = new AuthorizationHandler();
-    public ApiHandler api = new ApiHandler();
+    public RequestsHandler api = new RequestsHandler();
 
-    //TODO move this method to AuthorizationHandler?
     public boolean isAuthorized() throws IOException {
         HTTPServer.start();
         String input;
