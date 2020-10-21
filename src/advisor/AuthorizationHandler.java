@@ -5,29 +5,26 @@ import com.google.gson.JsonParser;
 import com.sun.net.httpserver.*;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class HTTP {
+public class AuthorizationHandler {
 
-    private HttpServer server;
-
-    private static String ACCESS_TOKEN = null;
+    public static String ACCESS_TOKEN;
     public static String ACCOUNT_SERVICE = "https://accounts.spotify.com";
 
     private String clientId = "b07d74663394474199b86e460e9d01de";
-    private String clientSecret = "2e337c3fef0142909c863ac5d21c0015";
+    private String clientSecret = "a5fcd0999a9148fd9733ef2d9bbb7482";
     private String redirectURI = "http://localhost:8081";
 
     private String authorizationLink = String.format("https://accounts.spotify.com/authorize?client_id=%s&redirect_uri=%s&response_type=code", clientId, redirectURI);
     private String authCode;
 
-    public boolean handleAuthRequest() throws IOException {
+    public boolean handleAuthRequest() {
         boolean authorized;
-        startServer();
+        createContext(HTTPServer.SERVER);
         showLinkForAccessCode();
         waitForAuthCode();
         if (isAccessTokenReceived()) {
@@ -35,19 +32,7 @@ public class HTTP {
         } else {
             authorized = false;
         }
-        shutdownServer();
         return authorized;
-    }
-
-    private void startServer() throws IOException {
-        server = HttpServer.create();
-        server.bind(new InetSocketAddress(8081), 0);
-        server.start();
-        createContext(server);
-    }
-
-    private void shutdownServer() {
-        server.stop(1);
     }
 
     private void createContext(HttpServer server) {
