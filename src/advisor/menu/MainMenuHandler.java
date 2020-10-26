@@ -45,8 +45,7 @@ public class MainMenuHandler {
                     api.getNewReleases();
                     break;
                 case "featured":
-                    System.out.println("---FEATURED---");
-                    System.out.println("Mellow Morning");
+                    api.getFeaturedPlaylists();
                     break;
                 case "categories":
                     api.getCategories();

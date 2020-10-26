@@ -16,7 +16,6 @@ public class NewReleases {
 
     protected static void show(String json){
         JsonObject jo = JsonParser.parseString(json).getAsJsonObject();
-
         JsonArray asJsonArray = jo.getAsJsonObject("albums").getAsJsonArray("items");
 
         for (int i = 0; i < asJsonArray.size(); i++) {

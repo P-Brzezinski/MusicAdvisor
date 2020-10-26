@@ -11,13 +11,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/ApiRequestsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/api/ApiRequestsHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/requests/FeaturedRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/requests/NewReleaseRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/ApiAuthorizationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/api/ApiAuthorizationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/api/Categories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/FeaturedPlaylists.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/api/FeaturedPlaylists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/api/NewReleases.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/api/NewReleases.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/advisor/menu/MainMenuHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/advisor/menu/MainMenuHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/api/ApiRequestsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/ApiRequestsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/api/FeaturedRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/FeaturedPlaylists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advisor/api/NewReleaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/NewReleases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advisor/api/ApiAuthorizationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/ApiAuthorizationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advisor/api/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advisor/api/FeaturedPlaylists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/FeaturedPlaylists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advisor/api/NewReleases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/api/NewReleases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/advisor/menu/MainMenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advisor/menu/MainMenuHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +38,17 @@
         <task path="$PROJECT_DIR$/build.gradle">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MusicAdvisor" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -249,6 +259,7 @@
       <workItem from="1603215418285" duration="10272000" />
       <workItem from="1603735170222" duration="304000" />
       <workItem from="1603740969017" duration="1639000" />
+      <workItem from="1603743676261" duration="650000" />
     </task>
     <servers />
   </component>
@@ -288,7 +299,7 @@
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1601901434437" />
     <state x="499" y="410" width="735" height="513" key="FileChooserDialogImpl/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603053473000" />
-    <state width="1253" height="191" key="GridCell.Tab.0.bottom" timestamp="1603742795313">
+    <state width="1253" height="52" key="GridCell.Tab.0.bottom" timestamp="1603744415071">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1234" height="259" key="GridCell.Tab.0.bottom/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278466" />
@@ -296,9 +307,9 @@
     <state width="1253" height="165" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1601907324635" />
     <state width="1253" height="67" key="GridCell.Tab.0.bottom/67.27.3347.741@67.27.3347.741" timestamp="1601918340566" />
-    <state width="1253" height="191" key="GridCell.Tab.0.bottom/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603742795313" />
+    <state width="1253" height="52" key="GridCell.Tab.0.bottom/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603744415071" />
     <state width="1253" height="169" key="GridCell.Tab.0.bottom/67.283.2579.741@67.283.2579.741" timestamp="1601925463772" />
-    <state width="1253" height="191" key="GridCell.Tab.0.center" timestamp="1603742795313">
+    <state width="1253" height="52" key="GridCell.Tab.0.center" timestamp="1603744415070">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1234" height="259" key="GridCell.Tab.0.center/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278466" />
@@ -306,9 +317,9 @@
     <state width="1253" height="165" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1601907324634" />
     <state width="1253" height="67" key="GridCell.Tab.0.center/67.27.3347.741@67.27.3347.741" timestamp="1601918340565" />
-    <state width="1253" height="191" key="GridCell.Tab.0.center/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603742795313" />
+    <state width="1253" height="52" key="GridCell.Tab.0.center/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603744415070" />
     <state width="1253" height="169" key="GridCell.Tab.0.center/67.283.2579.741@67.283.2579.741" timestamp="1601925463771" />
-    <state width="1253" height="191" key="GridCell.Tab.0.left" timestamp="1603742795313">
+    <state width="1253" height="52" key="GridCell.Tab.0.left" timestamp="1603744415070">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1234" height="259" key="GridCell.Tab.0.left/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278465" />
@@ -316,9 +327,9 @@
     <state width="1253" height="165" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1601907324634" />
     <state width="1253" height="67" key="GridCell.Tab.0.left/67.27.3347.741@67.27.3347.741" timestamp="1601918340564" />
-    <state width="1253" height="191" key="GridCell.Tab.0.left/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603742795313" />
+    <state width="1253" height="52" key="GridCell.Tab.0.left/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603744415070" />
     <state width="1253" height="169" key="GridCell.Tab.0.left/67.283.2579.741@67.283.2579.741" timestamp="1601925463771" />
-    <state width="1253" height="191" key="GridCell.Tab.0.right" timestamp="1603742795313">
+    <state width="1253" height="52" key="GridCell.Tab.0.right" timestamp="1603744415071">
       <screen x="67" y="283" width="1299" height="741" />
     </state>
     <state width="1234" height="259" key="GridCell.Tab.0.right/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1603216278466" />
@@ -326,7 +337,7 @@
     <state width="1253" height="165" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1024.768@67.27.1299.741" timestamp="1601301339677" />
     <state width="1253" height="170" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1601907324635" />
     <state width="1253" height="67" key="GridCell.Tab.0.right/67.27.3347.741@67.27.3347.741" timestamp="1601918340565" />
-    <state width="1253" height="191" key="GridCell.Tab.0.right/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603742795313" />
+    <state width="1253" height="52" key="GridCell.Tab.0.right/67.283.1299.741/1366.0.1280.1024@67.283.1299.741" timestamp="1603744415071" />
     <state width="1253" height="169" key="GridCell.Tab.0.right/67.283.2579.741@67.283.2579.741" timestamp="1601925463772" />
     <state width="1234" height="332" key="GridCell.Tab.1.bottom" timestamp="1603224604694">
       <screen x="0" y="283" width="1280" height="741" />
