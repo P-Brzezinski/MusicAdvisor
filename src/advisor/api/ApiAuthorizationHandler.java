@@ -11,7 +11,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class AuthorizationHandler {
+public class ApiAuthorizationHandler {
 
     public static String ACCESS_TOKEN;
     public static String ACCOUNT_SERVICE = "https://accounts.spotify.com";

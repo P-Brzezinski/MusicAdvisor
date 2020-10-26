@@ -1,6 +1,6 @@
-package advisor.api.requests;
+package advisor.api;
 
-import advisor.api.AuthorizationHandler;
+import advisor.api.ApiAuthorizationHandler;
 import advisor.model.NewReleaseRecord;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -14,8 +14,7 @@ import java.net.http.HttpResponse;
 
 public class NewReleaseRequest {
 
-    public void showNewReleases(){
-        String json = createRequest();
+    protected static void showNewReleases(String json){
         JsonObject jo = JsonParser.parseString(json).getAsJsonObject();
 
         JsonArray asJsonArray = jo.getAsJsonObject("albums").getAsJsonArray("items");
@@ -31,26 +30,5 @@ public class NewReleaseRequest {
             record.setUri(URI.create(link));
             System.out.println(record.toString());
         }
-    }
-
-    private String createRequest(){
-        String apiPath = "https://api.spotify.com/v1/browse/new-releases";
-        HttpRequest request = HttpRequest.newBuilder()
-                .header("Authorization", "Bearer " + AuthorizationHandler.ACCESS_TOKEN)
-                .uri(URI.create(apiPath))
-                .GET()
-                .build();
-        return handleRequest(request);
-    }
-
-    private String handleRequest(HttpRequest request){
-        HttpClient client = HttpClient.newBuilder().build();
-        HttpResponse<String> response = null;
-        try{
-            response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        }catch (IOException | InterruptedException | NullPointerException e){
-            e.printStackTrace();
-        }
-        return response.body();
     }
 }

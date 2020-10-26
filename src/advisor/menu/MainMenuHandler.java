@@ -1,8 +1,8 @@
 package advisor.menu;
 
-import advisor.api.RequestsHandler;
-import advisor.api.requests.NewReleaseRequest;
-import advisor.api.AuthorizationHandler;
+import advisor.api.ApiRequestsHandler;
+import advisor.api.ApiAuthorizationHandler;
+import advisor.api.NewReleaseRequest;
 import advisor.http.HTTPServer;
 
 import java.io.IOException;
@@ -11,8 +11,8 @@ import java.util.Scanner;
 public class MainMenuHandler {
 
     private Scanner scanner = new Scanner(System.in);
-    private AuthorizationHandler authorizationHandler = new AuthorizationHandler();
-    public RequestsHandler api = new RequestsHandler();
+    private ApiAuthorizationHandler apiAuthorizationHandler = new ApiAuthorizationHandler();
+    private ApiRequestsHandler api = new ApiRequestsHandler();
 
     public boolean isAuthorized() throws IOException {
         HTTPServer.start();
@@ -22,7 +22,7 @@ public class MainMenuHandler {
             input = scanner.nextLine();
             switch (input) {
                 case "auth":
-                    isAuthorized = authorizationHandler.handleAuthRequest();
+                    isAuthorized = apiAuthorizationHandler.handleAuthRequest();
                     if (isAuthorized){
                         System.out.println("Success!");
                         HTTPServer.stop();
