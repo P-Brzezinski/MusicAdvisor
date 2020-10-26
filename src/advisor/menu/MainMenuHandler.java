@@ -2,7 +2,6 @@ package advisor.menu;
 
 import advisor.api.ApiRequestsHandler;
 import advisor.api.ApiAuthorizationHandler;
-import advisor.api.NewReleaseRequest;
 import advisor.http.HTTPServer;
 
 import java.io.IOException;
@@ -23,10 +22,10 @@ public class MainMenuHandler {
             switch (input) {
                 case "auth":
                     isAuthorized = apiAuthorizationHandler.handleAuthRequest();
-                    if (isAuthorized){
+                    if (isAuthorized) {
                         System.out.println("Success!");
                         HTTPServer.stop();
-                    }else {
+                    } else {
                         System.out.println("Failed!");
                     }
                     break;
@@ -43,16 +42,14 @@ public class MainMenuHandler {
             input = scanner.nextLine();
             switch (input) {
                 case "new":
-                    api.showNewReleases();
+                    api.getNewReleases();
                     break;
                 case "featured":
                     System.out.println("---FEATURED---");
                     System.out.println("Mellow Morning");
                     break;
                 case "categories":
-                    System.out.println("---CATEGORIES---");
-                    System.out.println("Pop");
-                    System.out.println("Mood");
+                    api.getCategories();
                     break;
                 case "playlists Mood":
                     System.out.println("---MOOD PLAYLISTS---");

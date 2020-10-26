@@ -12,15 +12,14 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class NewReleaseRequest {
+public class NewReleases {
 
-    protected static void showNewReleases(String json){
+    protected static void show(String json){
         JsonObject jo = JsonParser.parseString(json).getAsJsonObject();
 
         JsonArray asJsonArray = jo.getAsJsonObject("albums").getAsJsonArray("items");
 
         for (int i = 0; i < asJsonArray.size(); i++) {
-            System.out.println();
             NewReleaseRecord record = new NewReleaseRecord();
             String title = asJsonArray.get(i).getAsJsonObject().get("name").getAsString();
             String name = asJsonArray.get(i).getAsJsonObject().getAsJsonArray("artists").get(0).getAsJsonObject().get("name").getAsString();
@@ -29,6 +28,7 @@ public class NewReleaseRequest {
             record.setArtist(name);
             record.setUri(URI.create(link));
             System.out.println(record.toString());
+            System.out.println();
         }
     }
 }

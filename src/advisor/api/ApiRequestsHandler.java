@@ -8,15 +8,20 @@ import java.net.http.HttpResponse;
 
 public class ApiRequestsHandler {
 
-    private static final String FEATURED_PLAYLISTS = "featured-playlists";
     private static final String NEW_RELEASES = "new-releases";
+    private static final String FEATURED_PLAYLISTS = "featured-playlists";
+    private static final String CATEGORIES = "categories";
 
-    public void showNewReleases(){
-        NewReleaseRequest.showNewReleases(createRequest(NEW_RELEASES));
+    public void getNewReleases(){
+        NewReleases.show(createRequest(NEW_RELEASES));
     }
 
-    public void showFeatured(){
-        FeaturedRequest.showFeatured(createRequest(FEATURED_PLAYLISTS));
+    public void getFeaturedPlaylists(){
+        FeaturedPlaylists.show(createRequest(FEATURED_PLAYLISTS));
+    }
+
+    public void getCategories(){
+        Categories.show(createRequest(CATEGORIES));
     }
 
     private String createRequest(String request){
