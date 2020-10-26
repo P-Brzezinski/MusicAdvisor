@@ -9,7 +9,6 @@ public class Categories {
 
     public static void show(String json){
         JsonObject jo = JsonParser.parseString(json).getAsJsonObject();
-
         JsonArray asJsonArray = jo.getAsJsonObject("categories").getAsJsonArray("items");
 
         for (JsonElement jsonElement : asJsonArray) {
