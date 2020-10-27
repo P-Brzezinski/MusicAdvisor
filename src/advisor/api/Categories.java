@@ -23,7 +23,6 @@ public class Categories {
             System.out.println(jsonElement.getAsJsonObject().get("external_urls").getAsJsonObject().get("spotify").getAsString());
             System.out.println();
         }
-        System.out.println();
     }
 
     public static String getCategoryId(String json, String category) {

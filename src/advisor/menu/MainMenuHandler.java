@@ -42,9 +42,8 @@ public class MainMenuHandler {
         do {
             input = scanner.nextLine();
             if (input.contains("playlists")){
-                String[] s = input.split(" ");
-                input = s[0];
-                category = s[1];
+                category = input.substring(10);
+                input = "playlists";
             }
             switch (input) {
                 case "new":
