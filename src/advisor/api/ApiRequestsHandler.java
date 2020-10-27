@@ -1,5 +1,7 @@
 package advisor.api;
 
+import com.google.gson.JsonArray;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -8,20 +10,21 @@ import java.net.http.HttpResponse;
 
 public class ApiRequestsHandler {
 
-    private static final String NEW_RELEASES = "new-releases";
-    private static final String FEATURED_PLAYLISTS = "featured-playlists";
-    private static final String CATEGORIES = "categories";
-
-    public void getNewReleases(){
-        NewReleases.show(createRequest(NEW_RELEASES));
+    public void newReleases(){
+        NewReleases.show(createRequest("new-releases"));
     }
 
-    public void getFeaturedPlaylists(){
-        FeaturedPlaylists.show(createRequest(FEATURED_PLAYLISTS));
+    public void featuredPlaylists(){
+        FeaturedPlaylists.show(createRequest("featured-playlists"));
     }
 
-    public void getCategories(){
-        Categories.show(createRequest(CATEGORIES));
+    public void categories(){
+        Categories.show(createRequest("categories"));
+    }
+
+    public void playlistsByCategory(String category){
+        String category_id = Categories.getCategoryId(createRequest("categories"), category);
+        Categories.showByCategory(createRequest(String.format("categories/%s/playlists", category_id)));
     }
 
     private String createRequest(String request){

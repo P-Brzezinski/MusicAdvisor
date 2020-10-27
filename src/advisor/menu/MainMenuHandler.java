@@ -38,20 +38,26 @@ public class MainMenuHandler {
 
     public void openMenu() {
         String input;
+        String category = null;
         do {
             input = scanner.nextLine();
+            if (input.contains("playlists")){
+                String[] s = input.split(" ");
+                input = s[0];
+                category = s[1];
+            }
             switch (input) {
                 case "new":
-                    api.getNewReleases();
+                    api.newReleases();
                     break;
                 case "featured":
-                    api.getFeaturedPlaylists();
+                    api.featuredPlaylists();
                     break;
                 case "categories":
-                    api.getCategories();
+                    api.categories();
                     break;
-                case "playlists Mood":
-                    System.out.println("---MOOD PLAYLISTS---");
+                case "playlists":
+                    api.playlistsByCategory(category);
                     break;
                 case "exit":
                     System.out.println("---GOODBYE!---");
@@ -60,5 +66,10 @@ public class MainMenuHandler {
                     System.out.println("No such option");
             }
         } while (!input.equals("exit"));
+    }
+
+    private String getCategory(String input) {
+        String[] s = input.split(" ");
+        return s[1];
     }
 }
