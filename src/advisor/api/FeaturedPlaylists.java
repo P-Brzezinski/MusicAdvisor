@@ -16,6 +16,5 @@ public class FeaturedPlaylists {
             System.out.println(jsonElement.getAsJsonObject().get("external_urls").getAsJsonObject().get("spotify").getAsString());
             System.out.println();
         }
-        System.out.println();
     }
 }

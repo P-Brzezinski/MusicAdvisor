@@ -24,7 +24,12 @@ public class ApiRequestsHandler {
 
     public void playlistsByCategory(String category){
         String category_id = Categories.getCategoryId(createRequest("categories"), category);
-        Categories.showByCategory(createRequest(String.format("categories/%s/playlists", category_id)));
+        if (category_id == null){
+            System.out.println("Unknown category name");
+            System.out.println();
+        }else {
+            Categories.showByCategory(createRequest(String.format("categories/%s/playlists", category_id)));
+        }
     }
 
     private String createRequest(String request){

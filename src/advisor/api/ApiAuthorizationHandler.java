@@ -15,9 +15,10 @@ public class ApiAuthorizationHandler {
 
     public static String ACCESS_TOKEN;
     public static String ACCOUNT_SERVICE = "https://accounts.spotify.com";
+    public static String SERVER_PATH = "https://api.spotify.com";
 
     private String clientId = "b07d74663394474199b86e460e9d01de";
-    private String clientSecret = "2f019e2b0ef54257a945a1a06e41178e";
+    private String clientSecret = "a2dc6a1ea2c24d7ba3d2f88f188c2455";
     private String redirectURI = "http://localhost:8081";
 
     private String authorizationLink = String.format("https://accounts.spotify.com/authorize?client_id=%s&redirect_uri=%s&response_type=code", clientId, redirectURI);
