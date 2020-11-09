@@ -1,17 +1,16 @@
-package advisor.menu;
+package advisor.controller;
 
-import advisor.api.ApiRequestsHandler;
-import advisor.api.ApiAuthorizationHandler;
+import advisor.controller.api.ApiAuthorizationHandler;
 import advisor.http.HTTPServer;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class MainMenuHandler {
+public class MainMenuController {
 
     private Scanner scanner = new Scanner(System.in);
     private ApiAuthorizationHandler apiAuthorizationHandler = new ApiAuthorizationHandler();
-    private ApiRequestsHandler api = new ApiRequestsHandler();
+    private ApiController api = new ApiController();
 
     public boolean isAuthorized() throws IOException {
         HTTPServer.start();

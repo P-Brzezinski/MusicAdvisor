@@ -1,20 +1,15 @@
-package advisor.api;
+package advisor.controller.api;
 
-import advisor.api.ApiAuthorizationHandler;
 import advisor.model.NewReleaseRecord;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.IOException;
 import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 public class NewReleases {
 
-    protected static void show(String json){
+    public static void show(String json){
         JsonObject jo = JsonParser.parseString(json).getAsJsonObject();
         JsonArray asJsonArray = jo.getAsJsonObject("albums").getAsJsonArray("items");
 

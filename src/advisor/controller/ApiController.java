@@ -1,6 +1,9 @@
-package advisor.api;
+package advisor.controller;
 
-import com.google.gson.JsonArray;
+import advisor.controller.api.ApiAuthorizationHandler;
+import advisor.controller.api.Categories;
+import advisor.controller.api.FeaturedPlaylists;
+import advisor.controller.api.NewReleases;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,7 +11,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class ApiRequestsHandler {
+public class ApiController {
 
     public void newReleases(){
         NewReleases.show(createRequest("new-releases"));

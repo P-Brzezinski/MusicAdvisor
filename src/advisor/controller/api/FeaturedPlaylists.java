@@ -1,4 +1,4 @@
-package advisor.api;
+package advisor.controller.api;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

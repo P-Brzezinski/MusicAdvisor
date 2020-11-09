@@ -1,13 +1,12 @@
 package advisor;
 
-import advisor.api.ApiAuthorizationHandler;
-import advisor.menu.MainMenuHandler;
+import advisor.controller.MainMenuController;
 
 import java.io.IOException;
 
 public class Main {
 
-    private static MainMenuHandler menu = new MainMenuHandler();
+    private static MainMenuController menu = new MainMenuController();
 
     public static void main(String[] args) throws IOException {
 

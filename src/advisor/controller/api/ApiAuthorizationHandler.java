@@ -1,4 +1,4 @@
-package advisor.api;
+package advisor.controller.api;
 
 import advisor.http.HTTPServer;
 import com.google.gson.JsonObject;
