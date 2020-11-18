@@ -17,3 +17,5 @@ Commands:
  ## Demo:
  
  ![Demo](demo/demo.gif)
+ 
+ Author: Paweł Brzeziński
